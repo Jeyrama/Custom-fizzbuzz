@@ -23,3 +23,24 @@ Examples:
 
 
 // Solution
+
+let fizzBuzzCustom = function(stringOne, stringTwo, numOne, numTwo) {
+	stringOne = stringOne || 'Fizz';
+  stringTwo = stringTwo || 'Buzz';
+  numOne = numOne || 3;
+  numTwo = numTwo || 5;
+  
+  let ret = []
+  for (let i = 1; i <= 100; ++i) {
+  	if (i % numOne === 0 && i % numTwo === 0) {
+    	ret.push(stringOne + stringTwo);
+    } else if (i % numOne === 0) {
+    	ret.push(stringOne);
+    } else if (i % numTwo === 0) {
+    	ret.push(stringTwo);
+    } else {
+    	ret.push(i);
+    }
+  }
+  return ret;
+};
