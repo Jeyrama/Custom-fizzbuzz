@@ -20,3 +20,6 @@ Examples:
   fizzBuzzCustom('Hey', 'There')[11]         // returns "Hey" (12 is divisible by 3)
   fizzBuzzCustom("What's ", "up?", 3, 7)[80] // returns "What's " (81 is divisible by 3)
 */
+
+
+// Solution
